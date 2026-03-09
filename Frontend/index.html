@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="eventApp">
+<head>
+    <title>Event Slot Booking</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="services/apiService.js"></script>
+
+    <script src="controllers/slotController.js"></script>
+    <script src="controllers/bookingController.js"></script>
+    <script src="controllers/adminController.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<h2>Event Slot Booking System</h2>
+
+<nav>
+<a href="#!/create-slot">Create Slot</a>
+<a href="#!/book-slot">Book Slot</a>
+<a href="#!/admin-users">Admin Panel</a>
+</nav>
+
+<div ng-view></div>
+
+</body>
+</html>

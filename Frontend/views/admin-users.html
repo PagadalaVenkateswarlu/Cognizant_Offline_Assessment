@@ -1,0 +1,28 @@
+<h3>Admin Slots</h3>
+
+<table border="1">
+
+<tr>
+<th>User ID</th>
+<th>Start</th>
+<th>End</th>
+<th>Week</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr ng-repeat="slot in slots">
+
+<td>{{slot.user_id}}</td>
+<td>{{slot.start_time}}</td>
+<td>{{slot.end_time}}</td>
+<td>{{slot.week}}</td>
+<td>{{slot.is_booked}}</td>
+
+<td>
+<button ng-click="cancelSlot(slot)">Cancel</button>
+</td>
+
+</tr>
+
+</table>

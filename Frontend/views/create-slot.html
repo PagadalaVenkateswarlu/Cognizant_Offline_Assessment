@@ -1,0 +1,22 @@
+<h3>Create Slot</h3>
+
+<form ng-submit="createSlot()">
+
+<label>Start Time</label>
+<input type="datetime-local" ng-model="slot.start_time" required>
+
+<label>End Time</label>
+<input type="datetime-local" ng-model="slot.end_time" required>
+
+<label>Week</label>
+<input type="number" ng-model="slot.week">
+
+<label>Category</label>
+<input type="number" ng-model="slot.category_id">
+
+<button type="submit">Create Slot</button>
+
+</form>
+
+<p style="color:green">{{message}}</p>
+<p style="color:red">{{error}}</p>

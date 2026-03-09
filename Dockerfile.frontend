@@ -1,0 +1,13 @@
+# Use Nginx image
+FROM nginx:alpine
+
+# Remove default static files
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy frontend files
+COPY frontend/ /usr/share/nginx/html
+
+# Expose port
+EXPOSE 80
+
+# Nginx runs by default
